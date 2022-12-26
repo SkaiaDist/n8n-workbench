@@ -1,0 +1,17 @@
+{
+  "name": "n8n-workbench",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "export": "npx n8n export:workflow --backup --output ./project/workflows && npx n8n export:credentials --backup --output ./project/credentials",
+    "import": "npx n8n import:workflow --separate --input ./project/workflows && npx n8n import:credentials --separate --input ./project/credentials",
+    "push": ""
+  },
+  "author": "VeTaL",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
